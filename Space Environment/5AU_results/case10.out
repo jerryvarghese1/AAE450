@@ -1,0 +1,1648 @@
+
+
+                       S I N D A / F L U I N T 
+
+
+
+    ____          _______
+  //    \|   __    \|   \\ 
+ ||      |  /  \   ||    ||    C&R Technologies, Inc.
+ ||         \__/   ||    ||    Boulder Colorado, USA
+ ||         /  \   ||___//     Phone 303.971.0292, FAX 303.971.0035
+ ||         |  |/  ||   \\     www.crtech.com, support@crtech.com
+ ||      |  \__/\  ||    \\    
+  \\____/|         ||     \\   Hot engineering ... Cool software (R)
+
+
+
+               P R O C E S S O R  E X E C U T I O N
+
+               VERSION .............. CR6.1N    
+               MODIFICATION DATE .... 18AUG2021 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
+ DATE = 04/22/2023 START TIME = 22:42:31
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss
+ 
+
+
+  BUILDING CONFIGURATION DEFAULT                          WITH THERMAL SUBMODEL(S) - 
+          ANTENNA                         , DATA_COMP                       , ELECTRONICS                     , EPI_LO                          , 
+FUEL_TANK                       , GAMMA_RAY_SPECTR                , LANGMUIR_PROBE_WAVES            , MAGNETOMETER                    , 
+MAIN                            , OXIDIZER_TANK                   , PAYLOAD_MODULE                  , PROBE                           , 
+PROP_MODULE                     , PROP_SKIRT                      , RTG                             , SPACE                           , 
+SWEAP_A                         , TDPROPS                         , XNAV_NICER                      , C10A0                           , 
+C10A1                           , C10A2                           , 
+ PCS data being dumped to file ..\case10.savPCS
+
+  SUBMODEL NAME = ANTENNA                         
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = DATA_COMP                       
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = ELECTRONICS                     
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = EPI_LO                          
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = FUEL_TANK                       
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = GAMMA_RAY_SPECTR                
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = LANGMUIR_PROBE_WAVES            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = MAGNETOMETER                    
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = MAIN                            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = OXIDIZER_TANK                   
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = PAYLOAD_MODULE                  
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = PROBE                           
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = PROP_MODULE                     
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = PROP_SKIRT                      
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = RTG                             
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = SPACE                           
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = SWEAP_A                         
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = TDPROPS                         
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = XNAV_NICER                      
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =         12    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = C10A0                           
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = C10A1                           
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  SUBMODEL NAME = C10A2                           
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   120.000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-03
+
+  GLOBAL CONTROL CONSTANTS
+
+
+   ABSZRO =  -273.150     SIGMA  =  5.670400E-08    TIMEM  =   0.00000        TIMEN  =   0.00000        TIMEND =  2.592000E+06
+   TIMEO  =   0.00000    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = ANTENNA                         
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000     T       7=  20.000     T       8=  20.000    
+   T       9=  20.000     T      10=  20.000     T      11=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = DATA_COMP                       
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = ELECTRONICS                     
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       3=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000    
+   T       7=  20.000     T       8=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = EPI_LO                          
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       3=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001=  20.000     T   10002=  20.000     T   10003=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = FUEL_TANK                       
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -40.000     T       2= -40.150     T       3= -40.150    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = LANGMUIR_PROBE_WAVES            
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       3=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000    
+   T       7=  20.000     T       8=  20.000     T       9=  20.000     T      10=  20.000     T      12=  20.000     T      13=  20.000    
+   T      14=  20.000     T      15=  20.000     T      16=  20.000     T      17=  20.000     T      18=  20.000     T      19=  20.000    
+   T      20=  20.000     T      21=  20.000     T      22=  20.000     T      24=  20.000     T      25=  20.000     T      26=  20.000    
+   T      27=  20.000     T      28=  20.000     T      29=  20.000     T      30=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001=  20.000     T   10002=  20.000     T   10003=  20.000     T   10004=  20.000     T   10005=  20.000     T   10006=  20.000    
+   T   10007=  20.000     T   10008=  20.000     T   10009=  20.000     T   10010=  20.000     T   10012=  20.000     T   10013=  20.000    
+   T   10015=  20.000     T   10016=  20.000     T   10017=  20.000     T   10018=  20.000     T   10019=  20.000     T   10020=  20.000    
+   T   10021=  20.000     T   10022=  20.000     T   10024=  20.000     T   10025=  20.000     T   10026=  20.000     T   10027=  20.000    
+   T   10028=  20.000     T   10029=  20.000     T   10030=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = MAGNETOMETER                    
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       6=  20.000     T       7=  20.000     T       8=  20.000     T       9=  20.000     T      11=  20.000    
+   T      16=  20.000     T      17=  20.000     T      18=  20.000     T      19=  20.000     T      21=  20.000     T      26=  20.000    
+   T      27=  20.000     T      28=  20.000     T      29=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = MAIN                            
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       2=  20.000     T       3=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000     T       7=  20.000    
+   T       8=  20.000     T       9=  20.000     T      10=  20.000     T      11=  20.000     T      12=  20.000     T      13=  20.000    
+   T      14=  20.000     T      15=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10003=  20.000     T   10005=  20.000     T   10014=  20.000     T   10015=  20.000     T   20015=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = OXIDIZER_TANK                   
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       2= -40.150    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    11
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PAYLOAD_MODULE                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       3=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000    
+   T       7=  20.000     T       8=  20.000     T       9=  20.000     T      10=  20.000     T      11=  20.000     T      12=  20.000    
+   T      13=  20.000     T      14=  20.000     T      15=  20.000     T      16=  20.000     T      17=  20.000     T      18=  20.000    
+   T      19=  20.000     T      20=  20.000     T      21=  20.000     T      22=  20.000     T      23=  20.000     T      24=  20.000    
+   T      25=  20.000     T      26=  20.000     T      27=  20.000     T      28=  20.000     T      29=  20.000     T      30=  20.000    
+   T      31=  20.000     T      32=  20.000     T      33=  20.000     T      34=  20.000     T      35=  20.000     T      36=  20.000    
+   T      37=  20.000     T      38=  20.000     T      39=  20.000     T      40=  20.000     T      41=  20.000     T      42=  20.000    
+   T      43=  20.000     T      44=  20.000     T      45=  20.000     T      46=  20.000     T      47=  20.000     T      48=  20.000    
+   T      49=  20.000     T      50=  20.000     T      51=  20.000     T      52=  20.000     T      53=  20.000     T      55=  20.000    
+   T      56=  20.000     T      57=  20.000     T      58=  20.000     T      59=  20.000     T      61=  20.000     T      62=  20.000    
+   T      63=  20.000     T      64=  20.000     T      65=  20.000     T      66=  20.000     T      67=  20.000     T      68=  20.000    
+   T      69=  20.000     T      70=  20.000     T      71=  20.000     T      72=  20.000     T      73=  20.000     T      74=  20.000    
+   T      75=  20.000     T      76=  20.000     T      77=  20.000     T      78=  20.000     T      79=  20.000     T      80=  20.000    
+   T      81=  20.000     T      82=  20.000     T      83=  20.000     T      84=  20.000     T      86=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001=  20.000     T   10002=  20.000     T   10003=  20.000     T   10004=  20.000     T   10005=  20.000     T   10006=  20.000    
+   T   10007=  20.000     T   10008=  20.000     T   10009=  20.000     T   10010=  20.000     T   10011=  20.000     T   10012=  20.000    
+   T   10013=  20.000     T   10014=  20.000     T   10015=  20.000     T   10016=  20.000     T   10017=  20.000     T   10018=  20.000    
+   T   10019=  20.000     T   10020=  20.000     T   10021=  20.000     T   10022=  20.000     T   10023=  20.000     T   10024=  20.000    
+   T   10025=  20.000     T   10026=  20.000     T   10027=  20.000     T   10028=  20.000     T   10029=  20.000     T   10030=  20.000    
+   T   10031=  20.000     T   10032=  20.000     T   10033=  20.000     T   10034=  20.000     T   10035=  20.000     T   10036=  20.000    
+   T   10037=  20.000     T   10038=  20.000     T   10039=  20.000     T   10040=  20.000     T   10041=  20.000     T   10042=  20.000    
+   T   10043=  20.000     T   10044=  20.000     T   10045=  20.000     T   10046=  20.000     T   10047=  20.000     T   10048=  20.000    
+   T   10049=  20.000     T   10050=  20.000     T   10051=  20.000     T   10052=  20.000     T   10053=  20.000     T   10055=  20.000    
+   T   10056=  20.000     T   10057=  20.000     T   10058=  20.000     T   10059=  20.000     T   10061=  20.000     T   10062=  20.000    
+   T   10063=  20.000     T   10064=  20.000     T   10065=  20.000     T   10066=  20.000     T   10067=  20.000     T   10068=  20.000    
+   T   10069=  20.000     T   10070=  20.000     T   10071=  20.000     T   10072=  20.000     T   10073=  20.000     T   10074=  20.000    
+   T   10075=  20.000     T   10076=  20.000     T   10077=  20.000     T   10078=  20.000     T   10079=  20.000     T   10080=  20.000    
+   T   10081=  20.000     T   10082=  20.000     T   10083=  20.000     T   10084=  20.000     T   10086=  20.000     T   20003=  20.000    
+   T   20008=  20.000     T   20009=  20.000     T   20010=  20.000     T   20015=  20.000     T   20022=  20.000     T   20023=  20.000    
+   T   20027=  20.000     T   20028=  20.000     T   20031=  20.000     T   20032=  20.000     T   20034=  20.000     T   20035=  20.000    
+   T   20038=  20.000     T   20039=  20.000     T   20041=  20.000     T   20042=  20.000     T   20043=  20.000     T   20046=  20.000    
+   T   20047=  20.000     T   20049=  20.000     T   20050=  20.000     T   20055=  20.000     T   20056=  20.000     T   20057=  20.000    
+   T   20058=  20.000     T   20061=  20.000     T   20062=  20.000     T   20063=  20.000     T   20065=  20.000     T   20066=  20.000    
+   T   20067=  20.000     T   20069=  20.000     T   20072=  20.000     T   20073=  20.000     T   20074=  20.000     T   20076=  20.000    
+   T   20077=  20.000     T   20078=  20.000     T   20082=  20.000     T   20083=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    12
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PROBE                           
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000     T       7=  20.000    
+   T       8=  20.000     T       9=  20.000     T      10=  20.000     T      11=  20.000     T      12=  20.000     T      13=  20.000    
+   T      14=  20.000     T      15=  20.000     T      16=  20.000     T      17=  20.000     T      18=  20.000     T      19=  20.000    
+   T      21=  20.000     T      22=  20.000     T      23=  20.000     T      24=  20.000     T      25=  20.000     T      26=  20.000    
+   T      27=  20.000     T      28=  20.000     T      29=  20.000     T      31=  20.000     T      32=  20.000     T      33=  20.000    
+   T      34=  20.000     T      35=  20.000     T      36=  20.000     T      37=  20.000     T      38=  20.000     T      39=  20.000    
+   T      41=  20.000     T      42=  20.000     T      43=  20.000     T      44=  20.000     T      45=  20.000     T      46=  20.000    
+   T      47=  20.000     T      48=  20.000     T      49=  20.000     T      50=  20.000     T      51=  20.000     T      52=  20.000    
+   T      53=  20.000     T      54=  20.000     T      55=  20.000     T      56=  20.000     T      57=  20.000     T      58=  20.000    
+   T      59=  20.000     T      60=  20.000     T      61=  20.000     T      62=  20.000     T      63=  20.000     T      64=  20.000    
+   T      65=  20.000     T      66=  20.000     T      67=  20.000     T      68=  20.000     T      69=  20.000     T      70=  20.000    
+   T      71=  20.000     T      72=  20.000     T      73=  20.000     T      74=  20.000     T      75=  20.000     T      76=  20.000    
+   T      77=  20.000     T      78=  20.000     T      79=  20.000     T      80=  20.000     T      81=  20.000     T      82=  20.000    
+   T      83=  20.000     T      84=  20.000     T      85=  20.000     T      86=  20.000     T      87=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    13
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PROP_MODULE                     
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000     T       7=  20.000    
+   T       8=  20.000     T       9=  20.000     T      10=  20.000     T      11=  20.000     T      12=  20.000     T      13=  20.000    
+   T      17=  20.000     T      18=  20.000     T      19=  20.000     T      20=  20.000     T      21=  20.000     T      25=  20.000    
+   T      26=  20.000     T      27=  20.000     T      28=  20.000     T      29=  20.000     T      33=  20.000     T      34=  20.000    
+   T      35=  20.000     T      36=  20.000     T      37=  20.000     T      41=  20.000     T      42=  20.000     T      43=  20.000    
+   T      44=  20.000     T      45=  20.000     T      46=  20.000     T      47=  20.000     T      48=  20.000     T      49=  20.000    
+   T      50=  20.000     T      51=  20.000     T      52=  20.000     T      53=  20.000     T      54=  20.000     T      55=  20.000    
+   T      56=  20.000     T      58=  20.000     T      60=  20.000     T      62=  20.000     T      64=  20.000     T      65=  20.000    
+   T      66=  20.000     T      67=  20.000     T      68=  20.000     T      69=  20.000     T      70=  20.000     T      71=  20.000    
+   T      72=  20.000     T      73=  20.000     T      74=  20.000     T      75=  20.000     T      76=  20.000     T      77=  20.000    
+   T      78=  20.000     T      79=  20.000     T      80=  20.000     T      81=  20.000     T      82=  20.000     T      83=  20.000    
+   T      84=  20.000     T      85=  20.000     T      86=  20.000     T      87=  20.000     T      88=  20.000     T      89=  20.000    
+   T      90=  20.000     T      91=  20.000     T      92=  20.000     T      93=  20.000     T      94=  20.000     T      95=  20.000    
+   T      96=  20.000     T      97=  20.000     T      98=  20.000     T      99=  20.000     T     100=  20.000     T     101=  20.000    
+   T     102=  20.000     T     103=  20.000     T     104=  20.000     T     105=  20.000     T     106=  20.000     T     107=  20.000    
+   T     108=  20.000     T     109=  20.000     T     110=  20.000     T     111=  20.000     T     112=  20.000     T     113=  20.000    
+   T     114=  20.000     T     115=  20.000     T     116=  20.000     T     117=  20.000     T     118=  20.000     T     119=  20.000    
+   T     120=  20.000     T     121=  20.000     T     122=  20.000     T     123=  20.000     T     124=  20.000     T     127=  20.000    
+   T     128=  20.000     T     129=  20.000     T     130=  20.000     T     131=  20.000     T     132=  20.000     T     133=  20.000    
+   T     134=  20.000     T     135=  20.000     T     136=  20.000     T     137=  20.000     T     138=  20.000     T     139=  20.000    
+   T     140=  20.000     T     141=  20.000     T     142=  20.000     T     143=  20.000     T     144=  20.000     T     145=  20.000    
+   T     146=  20.000     T     147=  20.000     T     148=  20.000     T     149=  20.000     T     150=  20.000     T     151=  20.000    
+   T     152=  20.000     T     153=  20.000     T     154=  20.000     T     155=  20.000     T     156=  20.000     T     157=  20.000    
+   T     158=  20.000     T     159=  20.000     T     160=  20.000     T     161=  20.000     T     162=  20.000     T     163=  20.000    
+   T     165=  20.000     T     166=  20.000     T     167=  20.000     T     168=  20.000     T     169=  20.000     T     170=  20.000    
+   T     171=  20.000     T     172=  20.000     T     173=  20.000     T     174=  20.000     T     175=  20.000     T     176=  20.000    
+   T     177=  20.000     T     178=  20.000     T     179=  20.000     T     180=  20.000     T     181=  20.000     T     182=  20.000    
+   T     183=  20.000     T     184=  20.000     T     185=  20.000     T     186=  20.000     T     187=  20.000     T     188=  20.000    
+   T     189=  20.000     T     190=  20.000     T     191=  20.000     T     192=  20.000     T     193=  20.000     T     194=  20.000    
+   T     195=  20.000     T     197=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001=  20.000     T   10002=  20.000     T   10004=  20.000     T   10005=  20.000     T   10006=  20.000     T   10007=  20.000    
+   T   10008=  20.000     T   10009=  20.000     T   10010=  20.000     T   10011=  20.000     T   10012=  20.000     T   10013=  20.000    
+   T   10017=  20.000     T   10018=  20.000     T   10019=  20.000     T   10020=  20.000     T   10021=  20.000     T   10025=  20.000    
+   T   10026=  20.000     T   10027=  20.000     T   10028=  20.000     T   10029=  20.000     T   10033=  20.000     T   10034=  20.000    
+   T   10035=  20.000     T   10036=  20.000     T   10037=  20.000     T   10041=  20.000     T   10042=  20.000     T   10043=  20.000    
+   T   10044=  20.000     T   10045=  20.000     T   10046=  20.000     T   10047=  20.000     T   10048=  20.000     T   10049=  20.000    
+   T   10050=  20.000     T   10051=  20.000     T   10052=  20.000     T   10053=  20.000     T   10054=  20.000     T   10055=  20.000    
+   T   10056=  20.000     T   10058=  20.000     T   10060=  20.000     T   10062=  20.000     T   10064=  20.000     T   10065=  20.000    
+   T   10066=  20.000     T   10067=  20.000     T   10068=  20.000     T   10069=  20.000     T   10070=  20.000     T   10071=  20.000    
+   T   10072=  20.000     T   10073=  20.000     T   10074=  20.000     T   10075=  20.000     T   10076=  20.000     T   10077=  20.000    
+   T   10078=  20.000     T   10079=  20.000     T   10080=  20.000     T   10081=  20.000     T   10082=  20.000     T   10083=  20.000    
+   T   10084=  20.000     T   10085=  20.000     T   10086=  20.000     T   10087=  20.000     T   10088=  20.000     T   10089=  20.000    
+   T   10090=  20.000     T   10091=  20.000     T   10092=  20.000     T   10093=  20.000     T   10094=  20.000     T   10095=  20.000    
+   T   10096=  20.000     T   10097=  20.000     T   10098=  20.000     T   10099=  20.000     T   10100=  20.000     T   10101=  20.000    
+   T   10102=  20.000     T   10103=  20.000     T   10104=  20.000     T   10105=  20.000     T   10106=  20.000     T   10107=  20.000    
+   T   10108=  20.000     T   10109=  20.000     T   10110=  20.000     T   10111=  20.000     T   10112=  20.000     T   10113=  20.000    
+   T   10114=  20.000     T   10115=  20.000     T   10116=  20.000     T   10117=  20.000     T   10118=  20.000     T   10119=  20.000    
+   T   10120=  20.000     T   10121=  20.000     T   10122=  20.000     T   10123=  20.000     T   10127=  20.000     T   10128=  20.000    
+   T   10129=  20.000     T   10130=  20.000     T   10131=  20.000     T   10132=  20.000     T   10133=  20.000     T   10134=  20.000    
+   T   10135=  20.000     T   10136=  20.000     T   10137=  20.000     T   10138=  20.000     T   10139=  20.000     T   10140=  20.000    
+   T   10141=  20.000     T   10142=  20.000     T   10143=  20.000     T   10144=  20.000     T   10145=  20.000     T   10146=  20.000    
+   T   10147=  20.000     T   10148=  20.000     T   10149=  20.000     T   10150=  20.000     T   10151=  20.000     T   10152=  20.000    
+   T   10153=  20.000     T   10154=  20.000     T   10155=  20.000     T   10156=  20.000     T   10157=  20.000     T   10158=  20.000    
+   T   10159=  20.000     T   10160=  20.000     T   10165=  20.000     T   10166=  20.000     T   10167=  20.000     T   10168=  20.000    
+   T   10169=  20.000     T   10170=  20.000     T   10171=  20.000     T   10172=  20.000     T   10173=  20.000     T   10174=  20.000    
+   T   10175=  20.000     T   10177=  20.000     T   10178=  20.000     T   10179=  20.000     T   10180=  20.000     T   10181=  20.000    
+   T   10182=  20.000     T   10183=  20.000     T   10185=  20.000     T   10186=  20.000     T   10187=  20.000     T   10188=  20.000    
+   T   10189=  20.000     T   10190=  20.000     T   10191=  20.000     T   10192=  20.000     T   10194=  20.000     T   10195=  20.000    
+   T   20001=  20.000     T   20002=  20.000     T   20004=  20.000     T   20005=  20.000     T   20006=  20.000     T   20007=  20.000    
+   T   20008=  20.000     T   20009=  20.000     T   20010=  20.000     T   20011=  20.000     T   20012=  20.000     T   20013=  20.000    
+   T   20017=  20.000     T   20018=  20.000     T   20019=  20.000     T   20020=  20.000     T   20021=  20.000     T   20025=  20.000    
+   T   20026=  20.000     T   20027=  20.000     T   20028=  20.000     T   20029=  20.000     T   20033=  20.000     T   20034=  20.000    
+   T   20035=  20.000     T   20036=  20.000     T   20037=  20.000     T   20041=  20.000     T   20042=  20.000     T   20043=  20.000    
+   T   20044=  20.000     T   20045=  20.000     T   20046=  20.000     T   20047=  20.000     T   20048=  20.000     T   20049=  20.000    
+   T   20050=  20.000     T   20051=  20.000     T   20052=  20.000     T   20053=  20.000     T   20054=  20.000     T   20055=  20.000    
+   T   20056=  20.000     T   20058=  20.000     T   20060=  20.000     T   20062=  20.000     T   20064=  20.000     T   20065=  20.000    
+   T   20066=  20.000     T   20067=  20.000     T   20068=  20.000     T   20069=  20.000     T   20070=  20.000     T   20071=  20.000    
+   T   20072=  20.000     T   20073=  20.000     T   20074=  20.000     T   20075=  20.000     T   20076=  20.000     T   20077=  20.000    
+   T   20078=  20.000     T   20079=  20.000     T   20080=  20.000     T   20081=  20.000     T   20082=  20.000     T   20083=  20.000    
+   T   20084=  20.000     T   20085=  20.000     T   20086=  20.000     T   20087=  20.000     T   20088=  20.000     T   20089=  20.000    
+   T   20090=  20.000     T   20091=  20.000     T   20092=  20.000     T   20093=  20.000     T   20094=  20.000     T   20095=  20.000    
+   T   20096=  20.000     T   20097=  20.000     T   20098=  20.000     T   20099=  20.000     T   20100=  20.000     T   20101=  20.000    
+   T   20102=  20.000     T   20103=  20.000     T   20104=  20.000     T   20105=  20.000     T   20106=  20.000     T   20107=  20.000    
+   T   20108=  20.000     T   20109=  20.000     T   20110=  20.000     T   20111=  20.000     T   20112=  20.000     T   20113=  20.000    
+   T   20114=  20.000     T   20115=  20.000     T   20116=  20.000     T   20117=  20.000     T   20118=  20.000     T   20119=  20.000    
+   T   20120=  20.000     T   20121=  20.000     T   20122=  20.000     T   20123=  20.000     T   20127=  20.000     T   20128=  20.000    
+   T   20129=  20.000     T   20130=  20.000     T   20131=  20.000     T   20132=  20.000     T   20133=  20.000     T   20134=  20.000    
+   T   20135=  20.000     T   20136=  20.000     T   20137=  20.000     T   20138=  20.000     T   20139=  20.000     T   20140=  20.000    
+   T   20141=  20.000     T   20142=  20.000     T   20143=  20.000     T   20144=  20.000     T   20145=  20.000     T   20146=  20.000    
+   T   20147=  20.000     T   20148=  20.000     T   20149=  20.000     T   20150=  20.000     T   20151=  20.000     T   20152=  20.000    
+   T   20153=  20.000     T   20154=  20.000     T   20155=  20.000     T   20156=  20.000     T   20157=  20.000     T   20158=  20.000    
+   T   20159=  20.000     T   20160=  20.000     T   20165=  20.000     T   20166=  20.000     T   20167=  20.000     T   20168=  20.000    
+   T   20169=  20.000     T   20170=  20.000     T   20171=  20.000     T   20172=  20.000     T   20173=  20.000     T   20174=  20.000    
+   T   20175=  20.000     T   20177=  20.000     T   20178=  20.000     T   20179=  20.000     T   20180=  20.000     T   20181=  20.000    
+   T   20182=  20.000     T   20183=  20.000     T   20185=  20.000     T   20186=  20.000     T   20187=  20.000     T   20188=  20.000    
+   T   20189=  20.000     T   20190=  20.000     T   20191=  20.000     T   20192=  20.000     T   20194=  20.000     T   20195=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    14
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PROP_SKIRT                      
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       3=  20.000     T       4=  20.000     T       5=  20.000     T       6=  20.000    
+   T       7=  20.000     T       8=  20.000     T       9=  20.000     T      11=  20.000     T      16=  20.000     T      17=  20.000    
+   T      18=  20.000     T      19=  20.000     T      21=  20.000     T      26=  20.000     T      27=  20.000     T      28=  20.000    
+   T      29=  20.000     T      31=  20.000     T      36=  20.000     T      37=  20.000     T      38=  20.000     T      39=  20.000    
+   T      41=  20.000     T      46=  20.000     T      47=  20.000     T      48=  20.000     T      49=  20.000     T      50=  20.000    
+   T      51=  20.000     T      52=  20.000     T      53=  20.000     T      61=  20.000     T      62=  20.000     T      63=  20.000    
+   T      64=  20.000     T      65=  20.000     T      66=  20.000     T      67=  20.000     T      68=  20.000     T      69=  20.000    
+   T      70=  20.000     T      71=  20.000     T      72=  20.000     T      73=  20.000     T      74=  20.000     T      75=  20.000    
+   T      76=  20.000     T      77=  20.000     T      78=  20.000     T      79=  20.000     T      80=  20.000     T      81=  20.000    
+   T      82=  20.000     T      83=  20.000     T      84=  20.000     T      85=  20.000     T      86=  20.000     T      87=  20.000    
+   T      88=  20.000     T      89=  20.000     T      90=  20.000     T      91=  20.000     T      92=  20.000     T      93=  20.000    
+   T      94=  20.000     T      95=  20.000     T      96=  20.000     T      97=  20.000     T      98=  20.000     T      99=  20.000    
+   T     100=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T      13=  20.000     T      14=  20.000     T      15=  20.000     T      54=  20.000     T      55=  20.000     T      56=  20.000    
+   T      57=  20.000     T      58=  20.000     T      59=  20.000     T      60=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    15
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = RTG                             
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+   T       1=  210.00     T       6=  210.00     T       7=  210.00     T       8=  210.00     T       9=  210.00     T      11=  210.00    
+   T      12=  210.00     T      13=  210.00     T      14=  210.00     T      16=  210.00     T      21=  210.00     T      22=  210.00    
+   T      23=  210.00     T      24=  210.00     T      26=  210.00     T      27=  210.00     T      28=  210.00     T      29=  210.00    
+   T      31=  210.00     T      36=  210.00     T      37=  210.00     T      38=  210.00     T      39=  210.00     T      41=  210.00    
+   T      42=  210.00     T      43=  210.00     T      44=  210.00     T      46=  210.00     T      51=  210.00     T      52=  210.00    
+   T      53=  210.00     T      54=  210.00     T      56=  210.00     T      57=  210.00     T      58=  210.00     T      59=  210.00    
+   T      61=  210.00     T      66=  210.00     T      67=  210.00     T      68=  210.00     T      69=  210.00     T      71=  210.00    
+   T      72=  210.00     T      73=  210.00     T      74=  210.00     T      75=  210.00     T      76=  210.00     T      77=  210.00    
+   T      78=  210.00     T      79=  210.00     T      80=  210.00     T      81=  210.00     T      82=  210.00     T      83=  210.00    
+   T      84=  210.00     T      85=  210.00     T      86=  210.00     T      87=  210.00     T      88=  210.00     T      89=  210.00    
+   T      90=  210.00     T      91=  210.00     T      92=  210.00     T      93=  210.00     T      94=  210.00     T      95=  210.00    
+   T      96=  210.00     T      97=  210.00     T      98=  210.00     T      99=  210.00     T     100=  210.00     T     101=  210.00    
+   T     102=  210.00     T     103=  210.00     T     104=  210.00     T     105=  210.00     T     106=  210.00     T     107=  210.00    
+   T     108=  210.00     T     109=  210.00     T     110=  210.00     T     111=  210.00     T     112=  210.00     T     113=  210.00    
+   T     114=  210.00     T     115=  210.00     T     116=  210.00     T     117=  210.00     T     118=  210.00     T     119=  210.00    
+   T     120=  210.00     T     121=  210.00     T     122=  210.00     T     123=  210.00     T     124=  210.00     T     125=  210.00    
+   T     126=  210.00     T     127=  210.00     T     128=  210.00     T     129=  210.00     T     130=  210.00     T     131=  210.00    
+   T     132=  210.00     T     133=  210.00     T     134=  210.00     T     135=  210.00     T     136=  210.00     T     137=  210.00    
+   T     138=  210.00     T     139=  210.00     T     140=  210.00     T     141=  210.00     T     142=  210.00     T     143=  210.00    
+   T     144=  210.00     T     145=  210.00     T     146=  210.00     T     147=  210.00     T     148=  210.00     T     149=  210.00    
+   T     150=  210.00     T     151=  210.00     T     152=  210.00     T     153=  210.00     T     154=  210.00     T     155=  210.00    
+   T     156=  210.00     T     157=  210.00     T     158=  210.00     T     159=  210.00     T     160=  210.00     T     161=  210.00    
+   T     162=  210.00     T     163=  210.00     T     164=  210.00    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    16
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = SPACE                           
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+   T       1= -270.42    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    17
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = SWEAP_A                         
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       4=  20.000     T       5=  20.000     T       7=  20.000     T      10=  20.000     T      11=  20.000    
+   T      13=  20.000     T      16=  20.000     T      17=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001=  20.000     T   10004=  20.000     T   10005=  20.000     T   10010=  20.000     T   10011=  20.000     T   10013=  20.000    
+   T   10016=  20.000     T   10017=  20.000    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    18
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = XNAV_NICER                      
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  20.000     T       2=  20.000     T       7=  20.000     T       9=  20.000     T      11=  20.000     T      12=  20.000    
+   T      13=  20.000     T      14=  20.000     T      16=  20.000     T      21=  20.000     T      22=  20.000     T      23=  20.000    
+   T      24=  20.000     T      26=  20.000     T      27=  20.000     T      28=  20.000     T      29=  20.000     T      30=  20.000    
+   T      31=  20.000     T      32=  20.000     T      33=  20.000    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+  
+ LOOPCT =             108  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL XNAV_NICER WERE OSCILLATING AS OF LOOPCT =    108
+ LOOPCT =             108                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+ LOOPCT =             108                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+ LOOPCT =             108                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+  
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    19
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = ANTENNA                         
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(ANTENNA            9)= 2.474184E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  88.7594         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(ANTENNA            6)= 8.697296E-07 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -129.55     T       4= -127.13     T       5= -125.58     T       6= -120.26     T       7= -122.58     T       8= -137.73    
+   T       9= -125.83     T      10= -125.88     T      11= -133.02    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    20
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = DATA_COMP                       
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(DATA_COMP           1)= 6.942044E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                    0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(DATA_COMP           1)= 1.811914E-07 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -47.523    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    21
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = ELECTRONICS                     
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(ELECTRONICS           2)= 8.700929E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                      0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  = 1.021075E-05     ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(ELECTRONICS           4)= 3.648265E-12 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -45.573     T       2= -45.573     T       3= -45.573     T       4= -45.573     T       5= -45.573     T       6= -45.573    
+   T       7= -45.573     T       8= -45.573    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    22
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = EPI_LO                          
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(EPI_LO             1)= 2.513378E-04 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(EPI_LO         10003)= 9.220267E-05 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  4.58609         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(EPI_LO         10001)= 2.369234E-07 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -28.897     T       2= -28.915     T       3= -28.945    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001= -125.00     T   10002= -125.08     T   10003= -133.53    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    23
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = FUEL_TANK                       
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(FUEL_TANK           3)= 4.918048E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                    0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(FUEL_TANK           1)= 2.842171E-14 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -53.361     T       2= -41.125     T       3= -37.847    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    24
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = LANGMUIR_PROBE_WAVES            
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(LANGMUIR_PROBE_WAVES          25)= 7.251706E-04 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(LANGMUIR_PROBE_WAVES       10013)= 6.272165E-04 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  15.6208         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(LANGMUIR_PROBE_WAVES           5)= 1.813289E-06 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -21.913     T       2= -22.095     T       3= -21.885     T       4= -22.132     T       5= -22.077     T       6= -22.087    
+   T       7= -21.940     T       8= -22.335     T       9= -21.915     T      10= -21.949     T      12= -21.920     T      13= -22.241    
+   T      14= -22.098     T      15= -22.188     T      16= -21.950     T      17= -22.135     T      18= -21.925     T      19= -21.911    
+   T      20= -22.093     T      21= -21.882     T      22= -22.127     T      24= -22.083     T      25= -21.907     T      26= -22.042    
+   T      27= -21.882     T      28= -22.068     T      29= -35.481     T      30= -49.328    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001= -41.225     T   10002= -40.719     T   10003= -40.582     T   10004= -41.181     T   10005= -41.768     T   10006= -40.607    
+   T   10007= -41.396     T   10008= -38.979     T   10009= -41.164     T   10010= -41.271     T   10012= -39.247     T   10013= -32.391    
+   T   10015= -31.947     T   10016= -39.501     T   10017= -37.095     T   10018= -38.888     T   10019= -40.551     T   10020= -39.531    
+   T   10021= -38.204     T   10022= -39.085     T   10024= -39.571     T   10025= -40.626     T   10026= -37.823     T   10027= -40.305    
+   T   10028= -48.847     T   10029= -75.644     T   10030= -88.028    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    25
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = MAGNETOMETER                    
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(MAGNETOMETER           1)= 7.223695E-04 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                       0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  = 4.995462E-02     ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(MAGNETOMETER          17)= 2.976525E-07 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -22.154     T       6= -22.164     T       7= -22.164     T       8= -22.162     T       9= -22.164     T      11= -22.178    
+   T      16= -22.180     T      17= -22.180     T      18= -22.178     T      19= -22.180     T      21= -22.187     T      26= -22.188    
+   T      27= -22.188     T      28= -22.187     T      29= -22.188    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    26
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = MAIN                            
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(MAIN               7)= 9.804567E-04 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(MAIN           10014)= 6.238300E-04 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  5.08505         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(MAIN               4)=-4.503444E-06 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       2= -62.472     T       3= -46.241     T       4= -44.172     T       5= -45.108     T       6= -72.761     T       7= -44.115    
+   T       8= -58.492     T       9= -60.627     T      10= -58.310     T      11= -69.477     T      12= -69.449     T      13= -75.157    
+   T      14= -22.198     T      15= -44.878    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10003= -185.70     T   10005= -185.87     T   10014= -31.940     T   10015= -43.539     T   20015= -212.05    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    27
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = OXIDIZER_TANK                   
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(OXIDIZER_TANK           2)= 4.873674E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                        0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(OXIDIZER_TANK           2)=-2.842171E-14 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       2= -34.837    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    28
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PAYLOAD_MODULE                  
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(PAYLOAD_MODULE          74)= 1.957311E-04 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(PAYLOAD_MODULE       10068)= 2.101827E-04 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  171.917         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(PAYLOAD_MODULE          79)=-6.348248E-05 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -47.723     T       2= -43.868     T       3= -48.019     T       4= -45.610     T       5= -56.041     T       6= -48.575    
+   T       7= -49.493     T       8= -46.819     T       9= -46.549     T      10= -48.174     T      11= -45.834     T      12= -48.048    
+   T      13= -44.776     T      14= -46.721     T      15= -47.139     T      16= -45.938     T      17= -45.820     T      18= -47.532    
+   T      19= -45.573     T      20= -46.355     T      21= -46.027     T      22= -46.111     T      23= -44.550     T      24= -44.956    
+   T      25= -46.421     T      26= -45.963     T      27= -46.903     T      28= -45.919     T      29= -45.613     T      30= -46.755    
+   T      31= -45.994     T      32= -45.051     T      33= -44.806     T      34= -45.109     T      35= -43.698     T      36= -44.192    
+   T      37= -45.041     T      38= -44.459     T      39= -44.155     T      40= -43.859     T      41= -47.117     T      42= -46.535    
+   T      43= -44.895     T      44= -45.250     T      45= -46.330     T      46= -45.915     T      47= -45.566     T      48= -44.922    
+   T      49= -45.511     T      50= -44.040     T      51= -44.497     T      52= -43.262     T      53= -45.407     T      55= -43.729    
+   T      56= -42.773     T      57= -44.551     T      58= -42.790     T      59= -44.165     T      61= -45.505     T      62= -47.224    
+   T      63= -45.150     T      64= -44.627     T      65= -42.342     T      66= -52.817     T      67= -54.768     T      68= -54.882    
+   T      69= -42.808     T      70= -47.613     T      71= -43.610     T      72= -46.063     T      73= -45.851     T      74= -48.103    
+   T      75= -48.719     T      76= -46.399     T      77= -45.989     T      78= -48.300     T      79= -48.684     T      80= -47.053    
+   T      81= -49.334     T      82= -46.385     T      83= -45.427     T      84= -45.170     T      86= -42.976    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001= -62.913     T   10002= -137.64     T   10003= -59.235     T   10004= -188.16     T   10005= -170.46     T   10006= -55.184    
+   T   10007= -160.18     T   10008= -43.396     T   10009= -43.258     T   10010= -44.223     T   10011= -183.30     T   10012= -48.884    
+   T   10013= -183.51     T   10014= -47.778     T   10015= -43.386     T   10016= -188.77     T   10017= -43.205     T   10018= -43.890    
+   T   10019= -43.294     T   10020= -43.807     T   10021= -43.888     T   10022= -44.446     T   10023= -43.310     T   10024= -188.13    
+   T   10025= -64.041     T   10026= -189.03     T   10027= -43.875     T   10028= -43.349     T   10029= -170.05     T   10030= -188.53    
+   T   10031= -43.737     T   10032= -43.275     T   10033= -168.40     T   10034= -44.134     T   10035= -43.184     T   10036= -183.51    
+   T   10037= -183.68     T   10038= -43.489     T   10039= -43.368     T   10040= -182.23     T   10041= -43.217     T   10042= -44.340    
+   T   10043= -43.358     T   10044= -188.52     T   10045= -189.59     T   10046= -43.574     T   10047= -43.634     T   10048= -162.92    
+   T   10049= -44.251     T   10050= -43.262     T   10051= -185.84     T   10052= -135.04     T   10053= -186.11     T   10055= -130.41    
+   T   10056= -112.81     T   10057= -43.414     T   10058= -112.61     T   10059= -183.49     T   10061= -43.508     T   10062= -43.547    
+   T   10063= -43.476     T   10064= -183.13     T   10065= -112.22     T   10066= -43.399     T   10067= -43.551     T   10068= -151.04    
+   T   10069= -116.71     T   10070= -61.562     T   10071= -135.47     T   10072= -43.295     T   10073= -43.252     T   10074= -43.583    
+   T   10075= -140.80     T   10076= -43.479     T   10077= -48.625     T   10078= -43.462     T   10079= -142.32     T   10080= -64.229    
+   T   10081= -160.30     T   10082= -43.797     T   10083= -43.283     T   10084= -184.22     T   10086= -129.20     T   20003= -218.30    
+   T   20008= -164.45     T   20009= -138.26     T   20010= -213.78     T   20015= -150.45     T   20022= -218.98     T   20023= -215.88    
+   T   20027= -214.50     T   20028= -214.91     T   20031= -204.68     T   20032= -201.61     T   20034= -208.90     T   20035= -202.45    
+   T   20038= -202.87     T   20039= -201.82     T   20041= -217.45     T   20042= -215.85     T   20043= -219.58     T   20046= -215.58    
+   T   20047= -217.02     T   20049= -212.15     T   20050= -205.99     T   20055= -212.47     T   20056= -192.41     T   20057= -208.03    
+   T   20058= -195.70     T   20061= -217.51     T   20062= -160.31     T   20063= -215.52     T   20065= -173.66     T   20066= -178.91    
+   T   20067= -180.10     T   20069= -179.03     T   20072= -162.45     T   20073= -165.87     T   20074= -158.75     T   20076= -160.72    
+   T   20077= -157.15     T   20078= -171.04     T   20082= -206.20     T   20083= -206.03    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    29
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PROBE                           
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(PROBE             76)= 7.409783E-06 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  30.7783         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(PROBE             85)= 6.153691E-08 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -93.540     T       2= -126.00     T       4= -105.06     T       5= -108.76     T       6= -112.28     T       7= -105.76    
+   T       8= -107.43     T       9= -103.05     T      10= -136.31     T      11= -122.05     T      12= -129.28     T      13= -122.92    
+   T      14= -114.40     T      15= -106.58     T      16= -102.62     T      17= -107.28     T      18= -116.52     T      19= -114.93    
+   T      21= -101.56     T      22= -126.80     T      23= -101.37     T      24= -111.47     T      25= -104.65     T      26= -100.22    
+   T      27= -105.10     T      28= -113.61     T      29= -120.31     T      31= -110.95     T      32= -123.83     T      33= -117.56    
+   T      34= -108.83     T      35= -103.03     T      36= -97.662     T      37= -103.05     T      38= -111.19     T      39= -116.93    
+   T      41= -113.54     T      42= -131.34     T      43= -126.30     T      44= -133.77     T      45= -134.40     T      46= -128.47    
+   T      47= -119.26     T      48= -115.38     T      49= -137.46     T      50= -117.71     T      51= -126.61     T      52= -135.53    
+   T      53= -134.13     T      54= -137.47     T      55= -123.45     T      56= -135.90     T      57= -117.13     T      58= -132.37    
+   T      59= -127.59     T      60= -120.28     T      61= -125.58     T      62= -126.77     T      63= -131.38     T      64= -119.63    
+   T      65= -103.02     T      66= -120.35     T      67= -106.45     T      68= -94.690     T      69= -108.83     T      70= -109.80    
+   T      71= -129.59     T      72= -136.63     T      73= -96.531     T      74= -132.82     T      75= -135.10     T      76= -80.245    
+   T      77= -108.70     T      78= -125.77     T      79= -135.43     T      80= -132.15     T      81= -97.113     T      82= -117.43    
+   T      83= -136.69     T      84= -129.09     T      85= -102.23     T      86= -137.45     T      87= -128.15    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    30
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PROP_MODULE                     
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(PROP_MODULE          33)= 8.808628E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(PROP_MODULE       10102)= 1.105753E-04 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  30.5732         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(PROP_MODULE       10007)= 5.542345E-06 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -57.748     T       2= -63.064     T       4= -57.636     T       5= -50.145     T       6= -47.986     T       7= -49.909    
+   T       8= -55.514     T       9= -51.524     T      10= -55.072     T      11= -56.532     T      12= -54.733     T      13= -51.884    
+   T      17= -45.398     T      18= -30.716     T      19= -42.388     T      20= -35.903     T      21= -29.573     T      25= -45.721    
+   T      26= -21.313     T      27= -32.404     T      28= -38.195     T      29= -29.242     T      33= -43.341     T      34= -17.291    
+   T      35= -28.094     T      36= -21.293     T      37= -25.037     T      41= -48.106     T      42= -59.205     T      43= -59.539    
+   T      44= -49.302     T      45= -41.894     T      46= -36.841     T      47= -33.461     T      48= -41.714     T      49= -34.087    
+   T      50= -35.381     T      51= -39.877     T      52= -35.786     T      53= -32.528     T      54= -38.028     T      55= -38.333    
+   T      56= -30.976     T      58= -41.745     T      60= -24.367     T      62= -35.092     T      64= -41.946     T      65= -34.168    
+   T      66= -30.305     T      67= -37.568     T      68= -44.892     T      69= -40.723     T      70= -32.011     T      71= -37.193    
+   T      72= -45.140     T      73= -28.252     T      74= -34.090     T      75= -43.197     T      76= -56.481     T      77= -54.054    
+   T      78= -45.556     T      79= -44.150     T      80= -42.116     T      81= -42.461     T      82= -42.306     T      83= -41.471    
+   T      84= -40.595     T      85= -38.480     T      86= -42.935     T      87= -42.788     T      88= -42.190     T      89= -41.527    
+   T      90= -39.776     T      91= -43.568     T      92= -43.436     T      93= -42.948     T      94= -42.374     T      95= -41.584    
+   T      96= -44.413     T      97= -44.307     T      98= -43.820     T      99= -43.223     T     100= -42.939     T     101= -43.221    
+   T     102= -43.215     T     103= -34.843     T     104= -25.545     T     105= -34.976     T     106= -36.014     T     107= -44.637    
+   T     108= -60.208     T     109= -50.727     T     110= -58.113     T     111= -55.282     T     112= -38.854     T     113= -34.117    
+   T     114= -30.655     T     115= -41.819     T     116= -36.081     T     117= -35.607     T     118= -38.015     T     119= -32.034    
+   T     120= -28.654     T     121= -56.208     T     122= -31.734     T     123= -35.929     T     124= -46.343     T     127= -39.473    
+   T     128= -37.977     T     129= -38.843     T     130= -39.119     T     131= -46.249     T     132= -37.458     T     133= -45.306    
+   T     134= -34.728     T     135= -35.961     T     136= -36.885     T     137= -35.516     T     138= -34.204     T     139= -38.934    
+   T     140= -37.291     T     141= -38.051     T     142= -36.964     T     143= -35.447     T     144= -53.412     T     145= -38.857    
+   T     146= -39.614     T     147= -38.595     T     148= -36.597     T     149= -52.754     T     150= -40.835     T     151= -41.733    
+   T     152= -40.594     T     153= -37.740     T     154= -52.026     T     155= -50.487     T     156= -43.753     T     157= -49.607    
+   T     158= -51.189     T     159= -51.174     T     160= -49.437     T     161= -44.905     T     162= -46.343     T     163= -44.905    
+   T     165= -39.541     T     166= -32.762     T     167= -43.457     T     168= -40.373     T     169= -38.829     T     170= -54.093    
+   T     171= -51.922     T     172= -53.160     T     173= -40.456     T     174= -54.227     T     175= -47.774     T     176= -44.905    
+   T     177= -51.696     T     178= -41.865     T     179= -41.582     T     180= -52.172     T     181= -40.171     T     182= -53.256    
+   T     183= -33.382     T     184= -46.343     T     185= -51.224     T     186= -41.212     T     187= -45.487     T     188= -51.026    
+   T     189= -41.651     T     190= -52.273     T     191= -41.954     T     192= -28.614     T     193= -44.905     T     194= -37.934    
+   T     195= -41.596     T     197= -46.343    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001= -68.349     T   10002= -99.403     T   10004= -119.60     T   10005= -48.784     T   10006= -46.642     T   10007= -84.496    
+   T   10008= -129.36     T   10009= -51.662     T   10010= -137.02     T   10011= -169.04     T   10012= -144.11     T   10013= -53.071    
+   T   10017= -46.255     T   10018= -30.394     T   10019= -55.900     T   10020= -52.853     T   10021=  14.681     T   10025= -46.731    
+   T   10026= -18.960     T   10027= -47.848     T   10028= -38.483     T   10029= -44.186     T   10033= -46.508     T   10034= -13.110    
+   T   10035= -43.319     T   10036=  44.233     T   10037= -34.840     T   10041= -47.555     T   10042= -61.372     T   10043= -73.667    
+   T   10044= -48.664     T   10045= -145.62     T   10046= -141.52     T   10047= -143.28     T   10048= -53.216     T   10049= -75.501    
+   T   10050= -53.071     T   10051= -141.68     T   10052= -127.98     T   10053= -129.88     T   10054= -81.175     T   10055= -52.936    
+   T   10056= -83.244     T   10058= -44.007     T   10060=  34.759     T   10062= -38.330     T   10064= -120.37     T   10065= -117.15    
+   T   10066= -116.49     T   10067= -115.79     T   10068= -48.279     T   10069= -147.41     T   10070= -107.93     T   10071= -135.56    
+   T   10072= -49.867     T   10073= -103.61     T   10074= -131.34     T   10075= -50.860     T   10076= -110.81     T   10077= -148.19    
+   T   10078= -49.101     T   10079= -92.443     T   10080= -149.88     T   10081= -147.79     T   10082= -54.201     T   10083= -147.14    
+   T   10084= -111.29     T   10085= -147.61     T   10086= -142.91     T   10087= -54.315     T   10088= -142.99     T   10089= -120.02    
+   T   10090= -146.41     T   10091= -130.98     T   10092= -53.204     T   10093= -132.49     T   10094= -122.43     T   10095= -52.000    
+   T   10096= -114.44     T   10097= -51.774     T   10098= -116.26     T   10099= -138.49     T   10100= -120.03     T   10101= -51.639    
+   T   10102= -105.30     T   10103= -48.227     T   10104= -40.196     T   10105= -51.424     T   10106= -54.341     T   10107= -45.917    
+   T   10108= -141.99     T   10109= -49.561     T   10110= -155.80     T   10111= -176.71     T   10112= -127.49     T   10113= -115.95    
+   T   10114= -121.94     T   10115= -136.34     T   10116= -61.079     T   10117= -134.37     T   10118= -51.291     T   10119= -124.59    
+   T   10120= -55.835     T   10121= -130.37     T   10122= -53.244     T   10123= -87.785     T   10127= -101.43     T   10128= -145.95    
+   T   10129= -53.627     T   10130= -145.50     T   10131= -49.183     T   10132= -102.48     T   10133= -46.252     T   10134= -148.81    
+   T   10135= -147.17     T   10136= -54.300     T   10137= -146.39     T   10138= -106.19     T   10139= -122.81     T   10140= -143.99    
+   T   10141= -54.056     T   10142= -138.66     T   10143= -122.99     T   10144= -142.20     T   10145= -135.96     T   10146= -53.021    
+   T   10147= -134.98     T   10148= -125.97     T   10149= -143.93     T   10150= -119.00     T   10151= -51.680     T   10152= -119.72    
+   T   10153= -146.71     T   10154= -133.82     T   10155= -52.645     T   10156= -115.80     T   10157= -108.62     T   10158= -190.06    
+   T   10159= -114.38     T   10160= -51.427     T   10165= -54.060     T   10166= -94.486     T   10167= -51.794     T   10168= -143.22    
+   T   10169= -111.42     T   10170= -138.88     T   10171= -53.673     T   10172= -145.59     T   10173= -53.905     T   10174= -183.47    
+   T   10175= -49.000     T   10177= -53.825     T   10178= -134.18     T   10179= -49.761     T   10180= -139.48     T   10181= -129.33    
+   T   10182= -186.40     T   10183= -42.085     T   10185= -53.805     T   10186= -134.44     T   10187= -46.155     T   10188= -129.56    
+   T   10189= -53.290     T   10190= -189.90     T   10191= -54.290     T   10192= -37.069     T   10194= -48.522     T   10195= -139.34    
+   T   20001= -53.629     T   20002= -53.994     T   20004= -53.683     T   20005= -52.972     T   20006= -52.799     T   20007= -52.952    
+   T   20008= -53.504     T   20009= -53.271     T   20010= -53.442     T   20011= -53.514     T   20012= -53.416     T   20013= -53.267    
+   T   20017= -41.247     T   20018= -40.328     T   20019= -41.019     T   20020= -40.517     T   20021= -40.014     T   20025= -37.989    
+   T   20026= -36.428     T   20027= -37.004     T   20028= -37.447     T   20029= -36.747     T   20033= -34.937     T   20034= -33.261    
+   T   20035= -33.798     T   20036= -33.233     T   20037= -33.565     T   20041= -52.924     T   20042= -53.621     T   20043= -53.757    
+   T   20044= -53.012     T   20045= -40.925     T   20046= -37.282     T   20047= -34.167     T   20048= -40.913     T   20049= -37.141    
+   T   20050= -34.262     T   20051= -40.818     T   20052= -37.227     T   20053= -34.118     T   20054= -40.714     T   20055= -37.366    
+   T   20056= -34.035     T   20058= -40.987     T   20060= -36.339     T   20062= -34.341     T   20064= -40.900     T   20065= -36.997    
+   T   20066= -33.825     T   20067= -40.577     T   20068= -41.300     T   20069= -40.924     T   20070= -36.837     T   20071= -37.411    
+   T   20072= -38.109     T   20073= -33.667     T   20074= -34.310     T   20075= -35.100     T   20076= -53.595     T   20077= -53.327    
+   T   20078= -41.348     T   20079= -41.248     T   20080= -40.985     T   20081= -41.065     T   20082= -41.044     T   20083= -41.020    
+   T   20084= -40.988     T   20085= -37.580     T   20086= -41.141     T   20087= -41.132     T   20088= -41.114     T   20089= -41.084    
+   T   20090= -37.742     T   20091= -41.223     T   20092= -41.215     T   20093= -41.200     T   20094= -41.177     T   20095= -40.876    
+   T   20096= -41.318     T   20097= -41.306     T   20098= -41.291     T   20099= -41.254     T   20100= -38.072     T   20101= -38.066    
+   T   20102= -37.977     T   20103= -34.165     T   20104= -33.456     T   20105= -34.171     T   20106= -34.395     T   20107= -35.209    
+   T   20108= -53.857     T   20109= -53.198     T   20110= -53.667     T   20111= -53.382     T   20112= -40.701     T   20113= -37.046    
+   T   20114= -33.908     T   20115= -40.891     T   20116= -40.520     T   20117= -37.133     T   20118= -37.289     T   20119= -33.994    
+   T   20120= -33.772     T   20121= -53.555     T   20122= -36.881     T   20123= -37.347     T   20127= -40.856     T   20128= -37.445    
+   T   20129= -37.482     T   20130= -37.600     T   20131= -38.188     T   20132= -37.534     T   20133= -38.123     T   20134= -34.343    
+   T   20135= -34.506     T   20136= -34.544     T   20137= -34.496     T   20138= -34.443     T   20139= -34.817     T   20140= -34.685    
+   T   20141= -34.721     T   20142= -34.678     T   20143= -34.610     T   20144= -53.236     T   20145= -34.872     T   20146= -34.891    
+   T   20147= -34.849     T   20148= -34.745     T   20149= -53.150     T   20150= -35.051     T   20151= -35.106     T   20152= -35.042    
+   T   20153= -34.862     T   20154= -53.061     T   20155= -52.983     T   20156= -38.123     T   20157= -52.860     T   20158= -52.968    
+   T   20159= -52.981     T   20160= -52.862     T   20165= -37.617     T   20166= -34.249     T   20167= -35.114     T   20168= -37.760    
+   T   20169= -37.699     T   20170= -53.333     T   20171= -53.225     T   20172= -53.226     T   20173= -37.756     T   20174= -53.269    
+   T   20175= -52.785     T   20177= -53.160     T   20178= -37.934     T   20179= -40.892     T   20180= -53.112     T   20181= -37.856    
+   T   20182= -53.163     T   20183= -40.259     T   20185= -53.080     T   20186= -37.899     T   20187= -41.341     T   20188= -52.995    
+   T   20189= -37.907     T   20190= -53.063     T   20191= -40.980     T   20192= -36.570     T   20194= -37.277     T   20195= -37.987    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    31
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = PROP_SKIRT                      
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(PROP_SKIRT           6)= 7.251529E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(PROP_SKIRT          57)= 1.014645E-05 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  = 4.156375E-02     ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(PROP_SKIRT          15)= 3.881144E-06 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -46.363     T       2= -2.9122     T       3= -53.750     T       4= -27.282     T       5=  93.109     T       6= -46.363    
+   T       7= -46.363     T       8= -46.363     T       9= -46.363     T      11= -46.780     T      16= -46.780     T      17= -46.780    
+   T      18= -46.780     T      19= -46.780     T      21= -46.342     T      26= -46.343     T      27= -46.343     T      28= -46.343    
+   T      29= -46.343     T      31= -44.905     T      36= -44.905     T      37= -44.905     T      38= -44.905     T      39= -44.905    
+   T      41= -42.561     T      46= -42.304     T      47= -42.561     T      48= -42.811     T      49= -42.566     T      50= -87.369    
+   T      51= -91.149     T      52= -39.110     T      53= -51.872     T      61= -75.481     T      62= -99.269     T      63= -80.734    
+   T      64= -4.7403     T      65= -36.588     T      66= -60.511     T      67= -56.789     T      68= -59.901     T      69= -56.083    
+   T      70= -82.000     T      71= -85.916     T      72= -36.872     T      73= -65.191     T      74=  5.8608     T      75= -73.471    
+   T      76= -90.254     T      77= -78.130     T      78=  86.421     T      79= -64.972     T      80=  95.127     T      81= -57.441    
+   T      82= -30.642     T      83= -33.295     T      84= -68.287     T      85= -11.669     T      86= -75.161     T      87= -81.043    
+   T      88= -47.003     T      89= -25.322     T      90= -35.265     T      91= -73.581     T      92= -75.806     T      93= -79.257    
+   T      94=  2.4924     T      95= -12.078     T      96= -58.336     T      97= -23.317     T      98= -42.714     T      99= -39.397    
+   T     100= -42.152    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T      13= -65.858     T      14= -86.246     T      15= -64.674     T      54= -36.848     T      55= -60.364     T      56= -37.876    
+   T      57= -42.655     T      58= -70.588     T      59= -47.024     T      60= -76.693    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    32
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = RTG                             
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  0.00000     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  12606.3         ESUMOS= 1.309672E-10
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+   T       1=  210.00     T       6=  210.00     T       7=  210.00     T       8=  210.00     T       9=  210.00     T      11=  210.00    
+   T      12=  210.00     T      13=  210.00     T      14=  210.00     T      16=  210.00     T      21=  210.00     T      22=  210.00    
+   T      23=  210.00     T      24=  210.00     T      26=  210.00     T      27=  210.00     T      28=  210.00     T      29=  210.00    
+   T      31=  210.00     T      36=  210.00     T      37=  210.00     T      38=  210.00     T      39=  210.00     T      41=  210.00    
+   T      42=  210.00     T      43=  210.00     T      44=  210.00     T      46=  210.00     T      51=  210.00     T      52=  210.00    
+   T      53=  210.00     T      54=  210.00     T      56=  210.00     T      57=  210.00     T      58=  210.00     T      59=  210.00    
+   T      61=  210.00     T      66=  210.00     T      67=  210.00     T      68=  210.00     T      69=  210.00     T      71=  210.00    
+   T      72=  210.00     T      73=  210.00     T      74=  210.00     T      75=  210.00     T      76=  210.00     T      77=  210.00    
+   T      78=  210.00     T      79=  210.00     T      80=  210.00     T      81=  210.00     T      82=  210.00     T      83=  210.00    
+   T      84=  210.00     T      85=  210.00     T      86=  210.00     T      87=  210.00     T      88=  210.00     T      89=  210.00    
+   T      90=  210.00     T      91=  210.00     T      92=  210.00     T      93=  210.00     T      94=  210.00     T      95=  210.00    
+   T      96=  210.00     T      97=  210.00     T      98=  210.00     T      99=  210.00     T     100=  210.00     T     101=  210.00    
+   T     102=  210.00     T     103=  210.00     T     104=  210.00     T     105=  210.00     T     106=  210.00     T     107=  210.00    
+   T     108=  210.00     T     109=  210.00     T     110=  210.00     T     111=  210.00     T     112=  210.00     T     113=  210.00    
+   T     114=  210.00     T     115=  210.00     T     116=  210.00     T     117=  210.00     T     118=  210.00     T     119=  210.00    
+   T     120=  210.00     T     121=  210.00     T     122=  210.00     T     123=  210.00     T     124=  210.00     T     125=  210.00    
+   T     126=  210.00     T     127=  210.00     T     128=  210.00     T     129=  210.00     T     130=  210.00     T     131=  210.00    
+   T     132=  210.00     T     133=  210.00     T     134=  210.00     T     135=  210.00     T     136=  210.00     T     137=  210.00    
+   T     138=  210.00     T     139=  210.00     T     140=  210.00     T     141=  210.00     T     142=  210.00     T     143=  210.00    
+   T     144=  210.00     T     145=  210.00     T     146=  210.00     T     147=  210.00     T     148=  210.00     T     149=  210.00    
+   T     150=  210.00     T     151=  210.00     T     152=  210.00     T     153=  210.00     T     154=  210.00     T     155=  210.00    
+   T     156=  210.00     T     157=  210.00     T     158=  210.00     T     159=  210.00     T     160=  210.00     T     161=  210.00    
+   T     162=  210.00     T     163=  210.00     T     164=  210.00    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    33
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = SPACE                           
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  0.00000     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  12962.1    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+   T       1= -270.42    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    34
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = SWEAP_A                         
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(SWEAP_A           10)= 4.691294E-05 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(SWEAP_A        10016)= 3.730908E-05 VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  5.39389         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(SWEAP_A        10011)= 7.399048E-09 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -24.462     T       4= -24.474     T       5= -24.423     T       7= -24.606     T      10= -24.731     T      11= -24.530    
+   T      13= -24.462     T      16= -24.474     T      17= -24.423    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+   T   10001= -117.81     T   10004= -113.38     T   10005= -111.57     T   10010= -110.86     T   10011= -114.20     T   10013= -112.61    
+   T   10016= -111.09     T   10017= -113.38    
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    35
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+   STEADY
+
+
+  SUBMODEL NAME = XNAV_NICER                      
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(XNAV_NICER          14)= 6.498650E-04 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                     0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE = 7.220614E-09 VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  2.94807         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(XNAV_NICER          28)= 2.247321E-05 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =         123      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND= 2.592000E+06
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1= -55.454     T       2= -55.775     T       7= -55.457     T       9= -55.453     T      11= -55.429     T      12= -55.455    
+   T      13= -55.429     T      14= -55.448     T      16= -55.457     T      21= -55.442     T      22= -55.454     T      23= -55.442    
+   T      24= -55.450     T      26= -55.407     T      27= -55.453     T      28= -55.407     T      29= -55.446     T      30= -55.472    
+   T      31= -55.454     T      32= -55.776     T      33= -55.763    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+ 
+     SAVE WRITTEN AT TIMEN =   0.00000    , LOOPCT/O/R =        123/         0/         0, STARTING RECORD =      24466
+ 
+ Heater Steady State Q Values:
+ LOOPCT =             123Heater[LANGMUIR_PROBE_WAVES]::207F:
+ LOOPCT =             123    Steady State Proportional Heater Power Required:
+ LOOPCT =             123            14.3345532711859      W
+ LOOPCT =             123Heater[MAIN]::20D1:
+ LOOPCT =             123    Steady State Proportional Heater Power Required:
+ LOOPCT =             123            4.58543776639338      W
+ LOOPCT =             123Heater[MAIN]::20D0:
+ LOOPCT =             123    Steady State Proportional Heater Power Required:
+ LOOPCT =             123            5.39384226515648      W
+ LOOPCT =             123Heater[MAIN]::20CF:
+ LOOPCT =             123    Steady State Proportional Heater Power Required:
+ LOOPCT =             123            2.49513840927256      W
+ LOOPCT =             123    WARNING::Sense Temp Less Than On Temp
+ LOOPCT =             123         Sense=  -44.1435186187882          On Temp=  -40.0000000000000
+ LOOPCT =             123Heater[XNAV_NICER]::20CD:
+ LOOPCT =             123    Steady State Proportional Heater Power Required:
+ LOOPCT =             123            2.82623929333535      W
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    36
+
+ MODEL = SINDA                                                         450_BUS_louver_closed_tank.dwg - 5AU_ss                                              
+ 
+
+
+         MODEL SIZE TABULATION:   22 THERMAL AND    0 FLUID SUBMODELS. 
+                                 380 ARRAY CELLS, 
+                                  58 REGISTERS.
+                                1176 NODES IN T ARRAY 
+                               23143 CONDUCTORS IN G ARRAY. 
+                                   0 DYNAMIC CONDUCTORS FROM TD 
+
+ THERMAL SUBMODELS ------ 
+
+       NAME                                NODES    DIFF    ARIT   BD,HT       CONDS     LIN     RAD
+
+       ANTENNA                                 9       9       0       0          21      21       0
+       DATA_COMP                               1       1       0       0           1       1       0
+       ELECTRONICS                             8       8       0       0          20      20       0
+       EPI_LO                                  6       3       3       0           6       3       3
+       FUEL_TANK                               3       3       0       0         462     294     168
+       GAMMA_RAY_SPECTR                        0       0       0       0           2       2       0
+       LANGMUIR_PROBE_WAVES                   55      28      27       0         120      92      28
+       MAGNETOMETER                           15      15       0       0          35      35       0
+       MAIN                                   19      14       5       0         361     361       0
+       OXIDIZER_TANK                           1       1       0       0         378     210     168
+       PAYLOAD_MODULE                        207      83     124       0         466     338     128
+       PROBE                                  83      83       0       0         173     173       0
+       PROP_MODULE                           512     176     336       0           0       0       0
+       PROP_SKIRT                             83      73      10       0         246     246       0
+       RTG                                   135       0       0     135           2       2       0
+       SPACE                                   1       0       0       1           0       0       0
+       SWEAP_A                                17       9       8       0          24      16       8
+       TDPROPS                                 0       0       0       0           0       0       0
+       XNAV_NICER                             21      21       0       0          46      46       0
+       C10A0                                   0       0       0       0           0       0       0
+       C10A1                                   0       0       0       0        9520       0    9520
+       C10A2                                   0       0       0       0       11260       0   11260
+ 
+                               TOTAL        1176     527     513     136       23143    1860   21283
+
+                    Note: Active conductors are attributed to the thermal submodel of an endpoint node.
+                          The tally in each submodel may differ from CONDUCTOR DATA inputs.
+
+
+ FLUID SUBMODELS -------- 
+
+       NAME                                LUMPS   TANKS    JUNC    PLEN       PATHS   TUBES    CONN        TIES   FTIES  IFACES
+
+       (NONE)
+ LOOPCT =             123  The ASTAP execution time is:    2.94775589997880       seconds
